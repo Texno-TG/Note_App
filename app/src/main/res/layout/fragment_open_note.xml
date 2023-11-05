@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.AddNodeFragment">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:padding="12dp"
+        android:background="?android:attr/panelBackground"
+        android:id="@+id/back_arrow"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/back_arrow"
+        android:text="Add new Node"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:id="@+id/new_title"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/back_arrow"
+        android:layout_marginVertical="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:src="@drawable/round_edit_24"
+        android:padding="12dp"
+        android:background="?android:attr/panelBackground"
+        android:id="@+id/save_on"/>
+
+
+    <View
+        android:layout_marginVertical="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:padding="0.5dp"
+        app:layout_constraintTop_toBottomOf="@id/new_title"
+        android:id="@+id/linear"
+        android:gravity="center"
+        android:background="#8F9193"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        android:background="@drawable/best_screen"
+        android:padding="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:hint="Name"
+        android:focusable="false"
+        android:layout_marginVertical="18dp"
+        android:maxLines="1"
+        android:id="@+id/name_edit"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="top"
+        android:ems="12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/name_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/best_screen"
+        android:padding="12dp"
+        android:maxEms="12"
+        android:imeOptions="actionDone"
+        android:focusable="false"
+        android:lines="18"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="18dp"
+        android:textSize="18dp"
+        android:textIsSelectable="true"
+        android:id="@+id/fullscreen_desc"
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
